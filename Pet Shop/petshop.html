@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adams Pet Shop</title>
+  <link rel="stylesheet" href="petshop.css">
+</head>
+
+<body>
+  <header>
+    <img src="https://png.pngtree.com/png-vector/20220704/ourmid/pngtree-pet-shop-logo-template-png-image_5565598.png" alt="Adam's Pet Shop Logo">
+    <h1 >Adams Pet Shop</h1>
+    <button id="theme-toggle">🌙 Toggle Theme</button>
+  </header>
+
+  <div class="container">
+    <div class="pet-container"></div>
+  </div>
+
+  <div id="order-modal">
+    <div class="modal-content">
+      <h2>Order Pet</h2>
+      <form  id="order-form">
+        <input type="text" placeholder="name" id="customer-name" required>
+
+       
+        <input type="email" placeholder="email" id="customer-email" required>
+
+       
+        <input type="address" placeholder="address" id="customer-address" required>
+
+        
+        <input type="text" placeholder="pet name" id="pet-name" readonly>
+
+        
+        <input type="text" placeholder="price" id="pet-price" readonly>
+
+        
+        <input type="number" placeholder="quantity" id="quantity" min="1" value="1" required>
+
+        <button type="submit">Confirm Order</button>
+        <button type="button"  id="close-modal">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <footer>
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <img src="https://www.meyerspressurecleaners.com/wp-content/uploads/2021/02/PhoneIcon.png" alt="Phone Icon">
+      <p>+91 7871343024</p>
+    </div>
+    <div class="contact-info">
+      <img src="https://img.favpng.com/3/16/1/gmail-email-icon-logo-png-favpng-0fqcAi4AyrSQC3uUhRSumgu6i.jpg" alt="Email Icon">
+      <p>anonymous123@gmail.com</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="petshop.js"></script>
+</body>
+
+</html>
